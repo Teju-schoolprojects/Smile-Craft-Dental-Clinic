@@ -1,0 +1,839 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smile Craft Dental Clinic - Premium Oral Care</title>
+  <meta name="description" content="Welcome to Smile Craft Dental Clinic. Experience state-of-the-art dental care, personalized cosmetic treatments, and implantology by expert dentists in a luxury environment.">
+  <!-- Fonts and Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css">
+  <!-- Scripts -->
+  <script src="app.js" defer></script>
+</head>
+<body>
+
+  <!-- --- Header / Navbar --- -->
+  <header class="header" id="header">
+    <div class="container nav-container">
+      <a href="#" class="logo">
+        <div class="logo-icon">
+          <i class="fa-solid fa-tooth"></i>
+        </div>
+        Smile Craft
+      </a>
+      
+      <nav class="nav-menu" id="navMenu">
+        <a href="#hero" class="nav-link active">Home</a>
+        <a href="#services" class="nav-link">Services</a>
+        <a href="#booking" class="nav-link">Book Now</a>
+        <a href="#team" class="nav-link">Our Dentists</a>
+        <a href="#portal" class="nav-link">Smile Hub</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+      
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggleBtn" aria-label="Toggle Dark Mode">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+        <a href="#booking" class="btn btn-primary" id="navBookBtn">
+          Book Appt
+        </a>
+        <button class="mobile-toggle" id="mobileMenuToggle" aria-label="Open Navigation Menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- --- Hero Section --- -->
+  <section class="hero" id="hero">
+    <div class="container hero-grid">
+      <div class="hero-content animate-fade">
+        <div class="badge">
+          <i class="fa-solid fa-circle-check"></i> Welcome to Next-Gen Dentistry
+        </div>
+        <h1 class="hero-title">Crafting Healthy, Radiantly <span>Beautiful Smiles</span></h1>
+        <p class="hero-desc">Experience state-of-the-art biological dentistry combined with premium cosmetic care in an ultra-modern environment designed for your comfort.</p>
+        <div class="hero-btns">
+          <a href="#booking" class="btn btn-primary">Schedule Consultation</a>
+          <a href="#services" class="btn btn-secondary">Explore Treatments</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat-item">
+            <h4>12k+</h4>
+            <p>Happy Patients</p>
+          </div>
+          <div class="stat-item">
+            <h4>15+</h4>
+            <p>Years Excellence</p>
+          </div>
+          <div class="stat-item">
+            <h4>4.9<i class="fa-solid fa-star" style="color: var(--accent); font-size: 0.9rem; margin-left: 4px;"></i></h4>
+            <p>Google Rating</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="hero-media animate-float">
+        <div class="hero-img-wrapper">
+          <img src="assets/hero_clinic.jpg" alt="Smile Craft Dental Clinic Lobby" width="600" height="338">
+        </div>
+        <div class="hero-floating-card glass">
+          <div class="floating-icon">
+            <i class="fa-solid fa-shield-halved"></i>
+          </div>
+          <div class="floating-text">
+            <h5>Smile Guarantee</h5>
+            <p>Biological materials & lifetime structural warrantee on implants.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- --- Services Section --- -->
+  <section class="section" id="services">
+    <div class="container">
+      <div class="section-header">
+        <span class="sub">Clinical Offerings</span>
+        <h2>High-End Dental Specialties</h2>
+        <p>From essential preventative hygiene to advanced reconstructive dental surgery, we utilize computerized equipment for painless diagnostics and treatment.</p>
+      </div>
+
+      <div class="services-grid">
+        <!-- Service Card 1 -->
+        <div class="service-card">
+          <div class="service-img-wrapper">
+            <img src="assets/cosmetic_dentistry.jpg" alt="Cosmetic Dentistry radiant smile">
+          </div>
+          <h3>Cosmetic Dentistry</h3>
+          <p>Transform your smile using custom porcelain veneers, premium zoom laser whitening, and invisalign clear aligners.</p>
+          <a href="#booking" class="read-more">Book Consult <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+        
+        <!-- Service Card 2 -->
+        <div class="service-card">
+          <div class="service-img-wrapper">
+            <img src="assets/dental_implants.jpg" alt="Dental Implants 3D model">
+          </div>
+          <h3>Dental Implants</h3>
+          <p>Permanent, biological titanium or ceramic root replacements topped with handcrafted custom zirconia crowns.</p>
+          <a href="#booking" class="read-more">Book Consult <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+
+        <!-- Service Card 3 -->
+        <div class="service-card">
+          <div class="service-img-wrapper">
+            <img src="assets/orthodontics.jpg" alt="Discrete Orthodontics Ceramic Braces">
+          </div>
+          <h3>Orthodontics</h3>
+          <p>Align teeth using advanced, invisible clear aligners or highly discrete premium sapphire clear braces.</p>
+          <a href="#booking" class="read-more">Book Consult <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+
+        <!-- Service Card 4 -->
+        <div class="service-card">
+          <div class="service-img-wrapper">
+            <img src="assets/general_dentistry.jpg" alt="General Dentistry proactive checkup session">
+          </div>
+          <h3>General Dentistry</h3>
+          <p>Our general dental care focuses on proactive wellness and biological health to protect your smile before concerns arise. Utilizing advanced digital oral checkups and micro-dentistry, we offer ultra-precise, painless treatments that preserve natural tooth structure in absolute luxury and comfort.</p>
+          <a href="#booking" class="read-more">Book Consult <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </div>
+
+      <!-- Pricing Calculator -->
+      <div class="calc-card glass" style="margin-top: 80px;">
+        <div style="text-align: center; margin-bottom: 30px;">
+          <h3>Treatment Estimate Estimator</h3>
+          <p style="color: var(--text-muted); font-size: 0.9rem;">Select desired treatments below to estimate total cost and view inclusions.</p>
+        </div>
+        <div class="calc-grid">
+          <div class="calc-left">
+            <div class="calc-option active" data-price="120" data-service="Hygiene & Checkup">
+              <div class="calc-option-info">
+                <div class="calc-check"><i class="fa-solid fa-check"></i></div>
+                <div>
+                  <strong>Deep Cleaning & Exam</strong>
+                  <p style="font-size: 0.75rem; color: var(--text-muted);">Hygiene, X-rays, Doctor Exam</p>
+                </div>
+              </div>
+              <strong style="color: var(--primary);">$120</strong>
+            </div>
+
+            <div class="calc-option" data-price="450" data-service="Laser Teeth Whitening">
+              <div class="calc-option-info">
+                <div class="calc-check"><i class="fa-solid fa-check"></i></div>
+                <div>
+                  <strong>Laser Teeth Whitening</strong>
+                  <p style="font-size: 0.75rem; color: var(--text-muted);">In-office Zoom whitening package</p>
+                </div>
+              </div>
+              <strong style="color: var(--primary);">$450</strong>
+            </div>
+
+            <div class="calc-option" data-price="1200" data-service="Porcelain Veneer">
+              <div class="calc-option-info">
+                <div class="calc-check"><i class="fa-solid fa-check"></i></div>
+                <div>
+                  <strong>Porcelain Veneer (Per Tooth)</strong>
+                  <p style="font-size: 0.75rem; color: var(--text-muted);">Premium E-max handcrafted veneer</p>
+                </div>
+              </div>
+              <strong style="color: var(--primary);">$1,200</strong>
+            </div>
+
+            <div class="calc-option" data-price="2500" data-service="Dental Implant">
+              <div class="calc-option-info">
+                <div class="calc-check"><i class="fa-solid fa-check"></i></div>
+                <div>
+                  <strong>Dental Implant Package</strong>
+                  <p style="font-size: 0.75rem; color: var(--text-muted);">Implants, Abutment & Crown</p>
+                </div>
+              </div>
+              <strong style="color: var(--primary);">$2,500</strong>
+            </div>
+          </div>
+
+          <div class="calc-right">
+            <div class="calc-price-box">
+              <p>Estimated Investment</p>
+              <h3 id="calcTotalDisplay">$120</h3>
+            </div>
+            <ul class="calc-info-list">
+              <li><i class="fa-solid fa-circle-check"></i> Complimentary digital 3D Smile Scan</li>
+              <li><i class="fa-solid fa-circle-check"></i> Flexible 0% APR financing options</li>
+              <li><i class="fa-solid fa-circle-check"></i> Detailed dental breakdown provided</li>
+            </ul>
+            <a href="#booking" class="btn btn-primary" style="width: 100%;">Book This Plan</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- --- Interactive Booking Section --- -->
+  <section class="section booking-section" id="booking">
+    <div class="container">
+      <div class="section-header">
+        <span class="sub">Appointments</span>
+        <h2>Secure Your Smile Visit</h2>
+        <p>Use our real-time interactive calendar to reserve your appointment with our dental specialists. It takes less than 2 minutes.</p>
+      </div>
+
+      <div class="booking-card glass">
+        <!-- Steps Indicator Header -->
+        <div class="booking-steps">
+          <div class="booking-step active" id="stepIndicator1">
+            <span class="step-num">1</span>
+            Service
+          </div>
+          <div class="booking-step" id="stepIndicator2">
+            <span class="step-num">2</span>
+            Doctor
+          </div>
+          <div class="booking-step" id="stepIndicator3">
+            <span class="step-num">3</span>
+            Schedule
+          </div>
+          <div class="booking-step" id="stepIndicator4">
+            <span class="step-num">4</span>
+            Details
+          </div>
+        </div>
+
+        <!-- Panels Content -->
+        <div class="booking-content">
+          <!-- Step 1: Select Service -->
+          <div class="booking-panel active" id="panel1">
+            <h3 style="margin-bottom: 20px;">What treatment do you require?</h3>
+            <div class="choice-grid">
+              <div class="choice-card selected" data-value="Cosmetic Consultation">
+                <i class="fa-solid fa-sparkles"></i>
+                <h4>Cosmetic Consult</h4>
+                <p>Whitening, Veneers, Smile Makeover</p>
+              </div>
+              <div class="choice-card" data-value="Dental Implant Check">
+                <i class="fa-solid fa-screwdriver"></i>
+                <h4>Dental Implants</h4>
+                <p>Missing teeth replacements</p>
+              </div>
+              <div class="choice-card" data-value="General Checkup">
+                <i class="fa-solid fa-kit-medical"></i>
+                <h4>Routine Checkup</h4>
+                <p>Cleaning, exam, filling</p>
+              </div>
+              <div class="choice-card" data-value="Orthodontic Consult">
+                <i class="fa-solid fa-teeth-open"></i>
+                <h4>Clear Aligners</h4>
+                <p>Invisalign orthdontic exam</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Step 2: Select Doctor -->
+          <div class="booking-panel" id="panel2">
+            <h3 style="margin-bottom: 20px;">Choose a Dental Specialist</h3>
+            <div class="choice-grid">
+              <div class="choice-card selected" data-value="Dr. Sarah Jenkins">
+                <img src="assets/doctor_female.jpg" alt="Dr. Sarah Jenkins">
+                <h4>Dr. Sarah Jenkins</h4>
+                <p>Cosmetic Specialist & Veneers</p>
+              </div>
+              <div class="choice-card" data-value="Dr. Marcus Vance">
+                <img src="assets/doctor_male.jpg" alt="Dr. Marcus Vance">
+                <h4>Dr. Marcus Vance</h4>
+                <p>Implantologist & Surgeon</p>
+              </div>
+              <div class="choice-card" data-value="First Available">
+                <i class="fa-solid fa-user-doctor" style="font-size: 2.5rem; margin-top: 14px;"></i>
+                <h4>First Available</h4>
+                <p>Fastest scheduling option</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Step 3: Date & Time Scheduler -->
+          <div class="booking-panel" id="panel3">
+            <h3 style="margin-bottom: 20px;">Select Date & Time</h3>
+            <div class="datetime-container">
+              <div class="calendar-wrapper">
+                <h4 id="calendarMonthTitle">July 2026</h4>
+                <div class="calendar-grid" id="bookingCalendarGrid">
+                  <!-- JS will generate calendar days dynamically -->
+                </div>
+              </div>
+              <div class="time-wrapper">
+                <h4>Available Hours</h4>
+                <div class="time-slots" id="bookingTimeSlots">
+                  <div class="time-slot" data-time="09:00 AM">09:00 AM</div>
+                  <div class="time-slot" data-time="10:30 AM">10:30 AM</div>
+                  <div class="time-slot" data-time="11:00 AM">11:00 AM</div>
+                  <div class="time-slot" data-time="01:30 PM">01:30 PM</div>
+                  <div class="time-slot" data-time="03:00 PM">03:00 PM</div>
+                  <div class="time-slot" data-time="04:30 PM">04:30 PM</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Step 4: Patient Details -->
+          <div class="booking-panel" id="panel4">
+            <h3 style="margin-bottom: 20px;">Enter Contact Credentials</h3>
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+              <div class="form-group">
+                <label for="bookName">Full Name</label>
+                <input type="text" id="bookName" class="form-control" placeholder="Alex Mercer" required>
+              </div>
+              <div class="form-group">
+                <label for="bookPhone">Phone Number</label>
+                <input type="tel" id="bookPhone" class="form-control" placeholder="(555) 019-2834" required>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="bookEmail">Email Address</label>
+              <input type="email" id="bookEmail" class="form-control" placeholder="alex@mercer.com" required>
+            </div>
+            <div class="form-group">
+              <label for="bookNotes">Symptoms / Notes (Optional)</label>
+              <textarea id="bookNotes" class="form-control" rows="3" placeholder="Would like to discuss veneer shaping or laser bleaching details..."></textarea>
+            </div>
+          </div>
+
+          <!-- Success Panel -->
+          <div class="booking-panel" id="panelSuccess">
+            <div class="success-panel">
+              <div class="success-icon">
+                <i class="fa-solid fa-check"></i>
+              </div>
+              <h2>Appointment Request Sent!</h2>
+              <p style="color: var(--text-muted); margin-bottom: 20px;">We have registered your appointment. A confirmation email and text details have been dispatched.</p>
+              
+              <div class="booking-details-box">
+                <h5>Appointment Credentials</h5>
+                <div class="booking-detail-item">
+                  <strong>Patient:</strong>
+                  <span id="confirmPatientName">Alex Mercer</span>
+                </div>
+                <div class="booking-detail-item">
+                  <strong>Specialty:</strong>
+                  <span id="confirmService">Cosmetic Consultation</span>
+                </div>
+                <div class="booking-detail-item">
+                  <strong>Dentist:</strong>
+                  <span id="confirmDoctor">Dr. Sarah Jenkins</span>
+                </div>
+                <div class="booking-detail-item">
+                  <strong>Date & Time:</strong>
+                  <span id="confirmDateTime">July 15, 2026 at 10:30 AM</span>
+                </div>
+              </div>
+
+              <button class="btn btn-primary" id="btnRestartBooking">Book Another Visit</button>
+            </div>
+          </div>
+
+          <!-- Actions Footer -->
+          <div class="booking-actions" id="bookingActionsFooter">
+            <button class="btn btn-secondary" id="btnBookingPrev" style="visibility: hidden;">
+              <i class="fa-solid fa-arrow-left"></i> Previous Step
+            </button>
+            <button class="btn btn-primary" id="btnBookingNext">
+              Next Step <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- --- Dentists Profiles --- -->
+  <section class="section" id="team">
+    <div class="container">
+      <div class="section-header">
+        <span class="sub">Medical Board</span>
+        <h2>Smile Specialists</h2>
+        <p>Meet our board-certified clinical leaders dedicated to providing customized, microscopic dental procedures.</p>
+      </div>
+
+      <div class="dentist-grid">
+        <!-- Dentist Card 1 -->
+        <div class="dentist-card">
+          <div class="dentist-image">
+            <img src="assets/doctor_female.jpg" alt="Dr. Sarah Jenkins - Cosmetic Dentist">
+            <div class="dentist-badge">Lead Aesthetic Doctor</div>
+          </div>
+          <div class="dentist-info">
+            <h3>Dr. Sarah Jenkins</h3>
+            <p>Cosmetic & Biological Dentist</p>
+            <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 20px;">DDS, Northwestern University. Specialized in smile rejuvenation, composite bondings, and E-max porcelain veneers.</p>
+            <div class="dentist-meta">
+              <span><i class="fa-solid fa-star"></i> 4.9 Rating</span>
+              <span><i class="fa-solid fa-award"></i> 12+ Yrs Exp</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Dentist Card 2 -->
+        <div class="dentist-card">
+          <div class="dentist-image">
+            <img src="assets/doctor_male.jpg" alt="Dr. Marcus Vance - Implantologist">
+            <div class="dentist-badge">Board Certified Surgeon</div>
+          </div>
+          <div class="dentist-info">
+            <h3>Dr. Marcus Vance</h3>
+            <p>Dental Implant & Maxillofacial Surgeon</p>
+            <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 20px;">DDS, NYU College of Dentistry. Fellow of ICOI. Specializes in advanced bone grafting and zirconium implants.</p>
+            <div class="dentist-meta">
+              <span><i class="fa-solid fa-star"></i> 5.0 Rating</span>
+              <span><i class="fa-solid fa-award"></i> 16+ Yrs Exp</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- --- Patient Portal Simulator (Smile Hub) --- -->
+  <section class="section" id="portal" style="background: radial-gradient(circle at 90% 70%, rgba(13, 101, 117, 0.04) 0%, transparent 60%);">
+    <div class="container">
+      <div class="section-header">
+        <span class="sub">Smile Hub Portal</span>
+        <h2>Your Digital Dental Chart</h2>
+        <p>Access your personalized diagnostic records, view tooth chart models, monitor hygiene ratings, and manage bills instantly.</p>
+      </div>
+
+      <div class="portal-card glass">
+        <div class="portal-header">
+          <div class="portal-title">
+            <i class="fa-solid fa-chart-line"></i>
+            <h3>Smile Hub Patient Dashboard</h3>
+          </div>
+          <div class="portal-user-badge">
+            <div class="portal-avatar">AM</div>
+            <div class="portal-user-name">
+              <h5>Alex Mercer (Patient)</h5>
+              <p>Member Since: Jan 2025 | ID: #SC-9204</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="portal-grid">
+          <!-- Sidebar -->
+          <div class="portal-sidebar">
+            <div class="portal-menu-item active" data-tab="tab-dashboard">
+              <i class="fa-solid fa-house-chimney"></i> Dashboard Home
+            </div>
+            <div class="portal-menu-item" data-tab="tab-appointments">
+              <i class="fa-solid fa-calendar-check"></i> Appointments
+            </div>
+            <div class="portal-menu-item" data-tab="tab-treatments">
+              <i class="fa-solid fa-notes-medical"></i> Treatment Plans
+            </div>
+            <div class="portal-menu-item" data-tab="tab-billing">
+              <i class="fa-solid fa-file-invoice-dollar"></i> Statements & Bills
+            </div>
+          </div>
+
+          <!-- Body Tabs -->
+          <div class="portal-body">
+            <!-- Tab 1: Dashboard Home -->
+            <div class="portal-tab-panel active" id="tab-dashboard">
+              <div class="portal-stats-row">
+                <div class="portal-stat-card">
+                  <h6>Next Treatment</h6>
+                  <h4>July 15, 2026</h4>
+                  <p>Dr. Sarah Jenkins</p>
+                </div>
+                <div class="portal-stat-card">
+                  <h6>Hygiene Score</h6>
+                  <h4>88%</h4>
+                  <p style="color: var(--secondary);"><i class="fa-solid fa-chevron-up"></i> Improved +4%</p>
+                  <div class="health-bar-container">
+                    <div class="health-bar-fill" style="width: 88%;"></div>
+                  </div>
+                </div>
+                <div class="portal-stat-card">
+                  <h6>Outstanding Bills</h6>
+                  <h4>$0.00</h4>
+                  <p style="color: var(--secondary);">All paid up</p>
+                </div>
+              </div>
+
+              <h4 style="margin-bottom: 16px;">Active Oral Diagnostics Summary</h4>
+              <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 24px;">Your dental alignment is progressing smoothly. Calculus buildup is minimal; continue flossing and scheduling hygiene exams twice yearly.</p>
+
+              <div class="glass" style="padding: 20px; border-radius: var(--radius-md); display: flex; align-items: center; gap: 20px;">
+                <i class="fa-solid fa-lightbulb" style="font-size: 2rem; color: var(--accent);"></i>
+                <div>
+                  <h5 style="margin-bottom: 4px;">Dentist Pro Tip</h5>
+                  <p style="font-size: 0.85rem; color: var(--text-muted);">Use a soft-bristled sonic toothbrush at a 45-degree angle to protect tooth enamel and keep gums strong.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Tab 2: Appointments -->
+            <div class="portal-tab-panel" id="tab-appointments">
+              <h4 style="margin-bottom: 20px;">Visit Schedule & Logs</h4>
+              <div style="overflow-x: auto;">
+                <table class="appt-table">
+                  <thead>
+                    <tr>
+                      <th>Date</th>
+                      <th>Service Type</th>
+                      <th>Clinician</th>
+                      <th>Status</th>
+                    </tr>
+                  </thead>
+                  <tbody id="portalApptTableBody">
+                    <tr>
+                      <td>Jul 15, 2026 - 10:30 AM</td>
+                      <td>Cosmetic Consultation</td>
+                      <td>Dr. Sarah Jenkins</td>
+                      <td><span class="appt-status upcoming">Upcoming</span></td>
+                    </tr>
+                    <tr>
+                      <td>Jan 08, 2026 - 02:00 PM</td>
+                      <td>Deep Cleaning & Exam</td>
+                      <td>Dr. Sarah Jenkins</td>
+                      <td><span class="appt-status completed">Completed</span></td>
+                    </tr>
+                    <tr>
+                      <td>Jul 12, 2025 - 09:30 AM</td>
+                      <td>Biocompatible Resin Fillings</td>
+                      <td>Dr. Sarah Jenkins</td>
+                      <td><span class="appt-status completed">Completed</span></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <!-- Tab 3: Treatment Plan -->
+            <div class="portal-tab-panel" id="tab-treatments">
+              <h4 style="margin-bottom: 20px;">Prescribed Dental Schedules</h4>
+              
+              <div class="treatment-plan-card">
+                <div class="plan-header">
+                  <div>
+                    <h5>Smile White Rejuvenation</h5>
+                    <p style="font-size: 0.8rem; color: var(--text-muted);">Esthetic Enhancement Plan</p>
+                  </div>
+                  <strong style="color: var(--primary);">2 of 3 Steps</strong>
+                </div>
+                <div class="plan-progress">
+                  <div class="health-bar-container" style="flex: 1; margin-top: 0;">
+                    <div class="health-bar-fill" style="width: 66%;"></div>
+                  </div>
+                  <span style="font-size: 0.85rem; font-weight: 600;">66% Done</span>
+                </div>
+                <ul style="font-size: 0.85rem; color: var(--text-muted); margin-top: 16px; display: grid; grid-template-columns: 1fr 1fr; gap: 8px;">
+                  <li><i class="fa-solid fa-circle-check" style="color: var(--secondary); margin-right: 8px;"></i> Tooth shade recording (Done)</li>
+                  <li><i class="fa-solid fa-circle-check" style="color: var(--secondary); margin-right: 8px;"></i> In-office laser whitening (Done)</li>
+                  <li><i class="fa-regular fa-circle" style="margin-right: 8px;"></i> E-max veneer cementation (Pending)</li>
+                  <li><i class="fa-solid fa-circle-check" style="color: var(--secondary); margin-right: 8px;"></i> Digital alignment mapping (Done)</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Tab 4: Statements & Bills -->
+            <div class="portal-tab-panel" id="tab-billing">
+              <h4 style="margin-bottom: 20px;">Clinical Invoices & Receipts</h4>
+              <div style="overflow-x: auto;">
+                <table class="appt-table">
+                  <thead>
+                    <tr>
+                      <th>Invoice ID</th>
+                      <th>Date</th>
+                      <th>Description</th>
+                      <th>Amount Paid</th>
+                      <th>Status</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>#INV-2026-098</td>
+                      <td>Jan 08, 2026</td>
+                      <td>Deep Cleaning & Exam Package</td>
+                      <td>$120.00</td>
+                      <td><span class="appt-status completed" style="background: rgba(68,206,162,0.1); color: var(--secondary);">Paid</span></td>
+                    </tr>
+                    <tr>
+                      <td>#INV-2025-450</td>
+                      <td>Jul 12, 2025</td>
+                      <td>Biocompatible Resin Fillings (x2 teeth)</td>
+                      <td>$350.00</td>
+                      <td><span class="appt-status completed" style="background: rgba(68,206,162,0.1); color: var(--secondary);">Paid</span></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- --- Testimonials Slider --- -->
+  <section class="section" style="background: rgba(13, 101, 117, 0.02);">
+    <div class="container">
+      <div class="section-header">
+        <span class="sub">Patient Stories</span>
+        <h2>Why Patients Love Smile Craft</h2>
+      </div>
+
+      <div class="testimonials-wrapper">
+        <div class="testimonial-track" id="testimonialTrack">
+          <!-- Slide 1 -->
+          <div class="testimonial-slide">
+            <div class="testimonial-rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <p class="testimonial-content">"I had a huge dental phobia until I visited Smile Craft. The clinic looks like a 5-star hotel, and Dr. Sarah was so gentle. The veneer procedure was completely painless and the result looks beautiful!"</p>
+            <div class="testimonial-author">
+              <h4>Emily Roberts</h4>
+              <p>Cosmetic Veneers Patient</p>
+            </div>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="testimonial-slide">
+            <div class="testimonial-rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <p class="testimonial-content">"Outstanding clinic! Dr. Marcus Vance installed an implant tooth and the care is second to none. He used advanced 3D guiding tech and biological zirconia. Best clinic experience ever."</p>
+            <div class="testimonial-author">
+              <h4>James Henderson</h4>
+              <p>Dental Implant Patient</p>
+            </div>
+          </div>
+
+          <!-- Slide 3 -->
+          <div class="testimonial-slide">
+            <div class="testimonial-rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <p class="testimonial-content">"The Smile Hub dashboard is amazing! I can view my dental charts, hygiene index, and invoices right on my phone. They really brought dentist appointments into the 21st century."</p>
+            <div class="testimonial-author">
+              <h4>Michael Sterling</h4>
+              <p>General Care Patient</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="slider-controls">
+          <button class="slider-btn" id="sliderPrevBtn" aria-label="Previous Review">
+            <i class="fa-solid fa-chevron-left"></i>
+          </button>
+          <button class="slider-btn" id="sliderNextBtn" aria-label="Next Review">
+            <i class="fa-solid fa-chevron-right"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- --- Contact / FAQ Section --- -->
+  <section class="section" id="contact">
+    <div class="container contact-grid">
+      <!-- Left side: FAQs & Info -->
+      <div>
+        <div class="section-header" style="text-align: left; margin-bottom: 40px;">
+          <span class="sub">Help Center</span>
+          <h2>Frequently Asked Questions</h2>
+        </div>
+
+        <div class="faq-container">
+          <!-- FAQ 1 -->
+          <div class="faq-item">
+            <div class="faq-question">
+              <h4>Does Smile Craft accept insurance?</h4>
+              <div class="faq-icon"><i class="fa-solid fa-plus"></i></div>
+            </div>
+            <div class="faq-answer">
+              <p>Yes, we coordinate directly with all major PPO dental insurances. Our office processes the claim paper files automatically, reducing your out-of-pocket stress.</p>
+            </div>
+          </div>
+
+          <!-- FAQ 2 -->
+          <div class="faq-item">
+            <div class="faq-question">
+              <h4>What are biological/biocompatible dental materials?</h4>
+              <div class="faq-icon"><i class="fa-solid fa-plus"></i></div>
+            </div>
+            <div class="faq-answer">
+              <p>We avoid BPA composites, nickel, mercury, and other materials that induce metal allergies. We prioritize biological zirconia, ceramic fillers, and ozone sterilization therapies.</p>
+            </div>
+          </div>
+
+          <!-- FAQ 3 -->
+          <div class="faq-item">
+            <div class="faq-question">
+              <h4>What if I have severe dentist anxiety?</h4>
+              <div class="faq-icon"><i class="fa-solid fa-plus"></i></div>
+            </div>
+            <div class="faq-answer">
+              <p>Our treatment rooms are designed as medical spas with noise-canceling headphones, custom aromatherapy, and optional sleep/laughing sedation options to guarantee ease.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-card glass" style="margin-top: 50px;">
+          <div class="contact-info-item">
+            <div class="contact-info-icon"><i class="fa-solid fa-clock"></i></div>
+            <div class="contact-info-text">
+              <h4>Working Hours</h4>
+              <p>Mon - Fri: 08:30 AM - 06:00 PM<br>Saturday: 09:00 AM - 02:00 PM</p>
+            </div>
+          </div>
+
+          <div class="contact-info-item">
+            <div class="contact-info-icon"><i class="fa-solid fa-location-dot"></i></div>
+            <div class="contact-info-text">
+              <h4>Dental Hub Address</h4>
+              <p>Suite 450, 890 Ocean Breeze Boulevard, Miami, FL 33139</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right side: Inquiry Form -->
+      <div class="contact-form-container">
+        <form class="contact-form" id="contactInquiryForm">
+          <h3>Send Us An Inquiry</h3>
+          <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 24px;">Have questions about pricing, treatments, or specific dental emergencies? Drop us a line below.</p>
+          
+          <div class="form-group">
+            <label for="contactName">Name</label>
+            <input type="text" id="contactName" class="form-control" placeholder="Alex Mercer" required>
+          </div>
+
+          <div class="form-group">
+            <label for="contactEmail">Email</label>
+            <input type="email" id="contactEmail" class="form-control" placeholder="alex@mercer.com" required>
+          </div>
+
+          <div class="form-group">
+            <label for="contactMessage">Message</label>
+            <textarea id="contactMessage" class="form-control" rows="4" placeholder="How can our clinical team support your dental goals?" required></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary" style="width: 100%;">
+            Send Message <i class="fa-solid fa-paper-plane" style="margin-left: 6px;"></i>
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- --- Footer --- -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-about">
+        <a href="#" class="logo">
+          <div class="logo-icon"><i class="fa-solid fa-tooth"></i></div>
+          Smile Craft
+        </a>
+        <p>Premium modern dentistry leveraging digital micro-treatments, biological materials, and expert aesthetic restorations.</p>
+        <div class="footer-socials">
+          <a href="#" class="social-icon" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" class="social-icon" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" class="social-icon" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul class="footer-links">
+          <li><a href="#services">Cosmetic Veneers</a></li>
+          <li><a href="#services">Zirconia Implants</a></li>
+          <li><a href="#services">Invisalign Braces</a></li>
+          <li><a href="#services">Laser Whitening</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Navigation</h4>
+        <ul class="footer-links">
+          <li><a href="#hero">Home Portal</a></li>
+          <li><a href="#services">Our Specialties</a></li>
+          <li><a href="#booking">Book Consult</a></li>
+          <li><a href="#team">Our Specialists</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Get In Touch</h4>
+        <ul class="footer-links">
+          <li><a href="tel:+13055550190"><i class="fa-solid fa-phone" style="margin-right: 8px; color: var(--secondary);"></i> (305) 555-0190</a></li>
+          <li><a href="mailto:hello@smilecraftclinic.com"><i class="fa-solid fa-envelope" style="margin-right: 8px; color: var(--secondary);"></i> hello@smilecraft.com</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p>&copy; 2026 Smile Craft Dental Clinic. All Rights Reserved.</p>
+      <div style="display: flex; gap: 20px;">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
