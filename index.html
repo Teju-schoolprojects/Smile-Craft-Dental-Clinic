@@ -214,6 +214,85 @@
     </div>
   </section>
 
+  <!-- --- Interactive Dental Technology Tour --- -->
+  <section class="section tech-tour-section" id="tech-tour" style="background: radial-gradient(circle at 10% 20%, rgba(13, 101, 117, 0.04) 0%, transparent 60%);">
+    <div class="container">
+      <div class="section-header">
+        <span class="sub">Advanced Care</span>
+        <h2>Precision Technology Tour</h2>
+        <p>Explore the high-end computerized equipment and painless treatment systems that define clinical excellence at Smile Craft.</p>
+      </div>
+
+      <div class="tech-grid">
+        <!-- Tech Card 1 -->
+        <div class="tech-card glass" data-tech="cadcam">
+          <div class="tech-icon"><i class="fa-solid fa-microscope"></i></div>
+          <h3>CAD/CAM Single-Day Crowns</h3>
+          <p>Design and mill permanent zirconia crowns in just 1 hour, eliminating uncomfortable temporary teeth.</p>
+          <button class="btn-tech-explore">Explore Technology <i class="fa-solid fa-chevron-right"></i></button>
+        </div>
+
+        <!-- Tech Card 2 -->
+        <div class="tech-card glass" data-tech="waterlase">
+          <div class="tech-icon"><i class="fa-solid fa-bolt-lightning"></i></div>
+          <h3>WaterLase Laser Dentistry</h3>
+          <p>Experience needle-free, drill-free laser treatments for entirely pain-free cavity cleaning and gum care.</p>
+          <button class="btn-tech-explore">Explore Technology <i class="fa-solid fa-chevron-right"></i></button>
+        </div>
+
+        <!-- Tech Card 3 -->
+        <div class="tech-card glass" data-tech="cbct">
+          <div class="tech-icon"><i class="fa-solid fa-cube"></i></div>
+          <h3>CBCT 3D Digital Imaging</h3>
+          <p>Get ultra-precise anatomical 3D scans of bone structure with 90% less radiation than classic X-rays.</p>
+          <button class="btn-tech-explore">Explore Technology <i class="fa-solid fa-chevron-right"></i></button>
+        </div>
+
+        <!-- Tech Card 4 -->
+        <div class="tech-card glass" data-tech="intraoral">
+          <div class="tech-icon"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+          <h3>Intraoral 3D Scanner</h3>
+          <p>Replace messy, gag-inducing clay impressions with quick, 3D high-definition digital tooth models.</p>
+          <button class="btn-tech-explore">Explore Technology <i class="fa-solid fa-chevron-right"></i></button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tech Modal Overlay -->
+    <div class="tech-modal" id="techModal">
+      <div class="tech-modal-content glass">
+        <button class="tech-modal-close" id="techModalClose" aria-label="Close modal"><i class="fa-solid fa-xmark"></i></button>
+        <div class="tech-modal-grid">
+          <div class="tech-modal-left">
+            <div class="tech-modal-icon-badge" id="modalTechIcon"><i class="fa-solid fa-microscope"></i></div>
+            <h3 id="modalTechTitle">CAD/CAM Single-Day Crowns</h3>
+            <p id="modalTechDesc">Our in-office CAD/CAM milling system allows us to scan, design, and manufacture individual zirconia crowns in a single visit, avoiding the need for messy impressions or multiple appointments.</p>
+            <div style="margin-top: 24px;">
+              <h5 style="margin-bottom: 8px;">Key Inclusions & Specs</h5>
+              <ul class="tech-spec-list" id="modalTechSpecs">
+                <!-- JS will populate -->
+              </ul>
+            </div>
+          </div>
+          <div class="tech-modal-right">
+            <h4 style="margin-bottom: 16px;">Technology Comparison</h4>
+            <div class="tech-comparison-box">
+              <div class="tech-comp-item">
+                <div class="tech-comp-label old">Traditional Method</div>
+                <p id="modalTechCompOld">Clay mold impressions, 2-week lab wait time, temporary plastic crown that frequently falls off.</p>
+              </div>
+              <div class="tech-comp-item">
+                <div class="tech-comp-label new">Smile Craft Tech</div>
+                <p id="modalTechCompNew">Immediate digital scan, immediate in-office milling, permanent crown installed in 1 visit.</p>
+              </div>
+            </div>
+            <a href="#booking" class="btn btn-primary" id="modalTechBookBtn" style="margin-top: 24px; width: 100%;">Book Checkup Visit</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- --- Interactive Booking Section --- -->
   <section class="section booking-section" id="booking">
     <div class="container">

@@ -438,14 +438,138 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   /* ==========================================
-     9. INQUIRY FORM SIMULATION
+     10. INTERACTIVE TECHNOLOGY TOUR LOGIC
      ========================================== */
-  const inquiryForm = document.getElementById('contactInquiryForm');
-  inquiryForm.addEventListener('submit', (e) => {
-    e.preventDefault();
-    const name = document.getElementById('contactName').value;
-    alert(`Thank you, ${name}! Your message has been received by our Smile Craft reception team. We will write back to you shortly.`);
-    inquiryForm.reset();
+  const techCards = document.querySelectorAll('.tech-card');
+  const techModal = document.getElementById('techModal');
+  const techModalClose = document.getElementById('techModalClose');
+  const modalTechIcon = document.getElementById('modalTechIcon');
+  const modalTechTitle = document.getElementById('modalTechTitle');
+  const modalTechDesc = document.getElementById('modalTechDesc');
+  const modalTechSpecs = document.getElementById('modalTechSpecs');
+  const modalTechCompOld = document.getElementById('modalTechCompOld');
+  const modalTechCompNew = document.getElementById('modalTechCompNew');
+  const modalTechBookBtn = document.getElementById('modalTechBookBtn');
+
+  const techData = {
+    cadcam: {
+      title: "CAD/CAM Single-Day Crowns",
+      icon: "fa-solid fa-microscope",
+      desc: "Our in-office CAD/CAM milling system allows us to scan, design, and manufacture individual zirconia crowns in a single visit, avoiding the need for messy impressions or multiple appointments.",
+      specs: [
+        "1-Hour in-office ceramic milling",
+        "High-definition 3D optical camera scanning",
+        "Biocompatible ceramic and zirconia materials",
+        "Custom color matching and glaze finishes"
+      ],
+      compOld: "Messy alginate clay mold impressions, 2-week wait time with a temporary plastic crown that frequently fractures or falls off.",
+      compNew: "Immediate digital scan, immediate in-office computerized milling, permanent zirconium crown installed in 1 comfortable visit.",
+      serviceChoice: "Cosmetic Consultation"
+    },
+    waterlase: {
+      title: "WaterLase Laser Dentistry",
+      icon: "fa-solid fa-bolt-lightning",
+      desc: "By combining water and laser energy, the WaterLase system performs precise cuts in hard and soft tissues without generating the friction, heat, and vibration that cause pain, often eliminating the need for local anesthesia injections.",
+      specs: [
+        "Needle-free, drill-free cavity preparation",
+        "Minimally invasive gum contouring",
+        "90% less post-op bleeding and swelling",
+        "Promotes faster natural tissue healing"
+      ],
+      compOld: "Loud mechanical drills, painful vibrations, heat friction, mandatory local anesthesia needles, and lingering facial numbness.",
+      compNew: "Silent laser energy, friction-free water cooling, no needles needed for most cavities, and immediate recovery without numbness.",
+      serviceChoice: "General Checkup"
+    },
+    cbct: {
+      title: "CBCT 3D Digital Imaging",
+      icon: "fa-solid fa-cube",
+      desc: "Cone Beam Computed Tomography (CBCT) provides highly detailed 3D radiographic reconstructions of your jaw bones, teeth roots, nasal cavities, and nerve pathways, enabling precise virtual implant surgery planning.",
+      specs: [
+        "Sub-millimeter anatomical precision",
+        "90% less radiation exposure than medical CT",
+        "3D implant placement simulation",
+        "Early detection of bone defects and infections"
+      ],
+      compOld: "Flat 2D X-rays with anatomical distortion, overlapping structures, and hidden nerve pathways requiring surgical exploratory cuts.",
+      compNew: "Full 3D anatomical visualization, virtual implant pre-planning, custom surgical guides, and safe, low-dose digital exposure.",
+      serviceChoice: "Dental Implant Check"
+    },
+    intraoral: {
+      title: "Intraoral 3D Scanner",
+      icon: "fa-solid fa-wand-magic-sparkles",
+      desc: "Our digital scanner captures thousands of pictures per second to construct a highly accurate, interactive 3D virtual model of your mouth in real-time, displaying your current teeth alignment and bite dynamics.",
+      specs: [
+        "No gag-inducing chemical clay molds",
+        "Instantly sent to dental labs via cloud",
+        "Bite analysis and alignment tracking",
+        "100% digital accuracy within micrometers"
+      ],
+      compOld: "Cold, gag-inducing chemical putty molds, 10-minute mouth-setting times, shipping delays, and risk of material distortion.",
+      compNew: "Comfortable 2-minute digital wand scan, real-time 3D screen visualization, cloud transfer, and flawless fit accuracy.",
+      serviceChoice: "Orthodontic Consult"
+    }
+  };
+
+  techCards.forEach(card => {
+    card.addEventListener('click', () => {
+      const techKey = card.getAttribute('data-tech');
+      const data = techData[techKey];
+      if (!data) return;
+
+      // Update Modal Contents
+      modalTechIcon.innerHTML = `<i class="${data.icon}"></i>`;
+      modalTechTitle.textContent = data.title;
+      modalTechDesc.textContent = data.desc;
+      modalTechCompOld.textContent = data.compOld;
+      modalTechCompNew.textContent = data.compNew;
+
+      // Update Inclusions specs list
+      modalTechSpecs.innerHTML = '';
+      data.specs.forEach(spec => {
+        const li = document.createElement('li');
+        li.innerHTML = `<i class="fa-solid fa-circle-check"></i> ${spec}`;
+        modalTechSpecs.appendChild(li);
+      });
+
+      // Tie booking CTA button to choice service
+      modalTechBookBtn.onclick = (e) => {
+        e.preventDefault();
+        techModal.classList.remove('active');
+
+        // Scroll to booking section
+        document.getElementById('booking').scrollIntoView({ behavior: 'smooth' });
+
+        // Update step 1 booking choice option dynamically
+        const serviceOptions = document.querySelectorAll('#panel1 .choice-card');
+        serviceOptions.forEach(opt => {
+          opt.classList.remove('selected');
+          if (opt.getAttribute('data-value') === data.serviceChoice) {
+            opt.classList.add('selected');
+            bookingState.service = data.serviceChoice;
+          }
+        });
+      };
+
+      // Open Modal
+      techModal.classList.add('active');
+    });
+  });
+
+  // Modal Close Events
+  techModalClose.addEventListener('click', () => {
+    techModal.classList.remove('active');
+  });
+
+  techModal.addEventListener('click', (e) => {
+    if (e.target === techModal) {
+      techModal.classList.remove('active');
+    }
+  });
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && techModal.classList.contains('active')) {
+      techModal.classList.remove('active');
+    }
   });
 
 });

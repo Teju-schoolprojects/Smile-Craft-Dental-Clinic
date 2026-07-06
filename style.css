@@ -1588,6 +1588,201 @@ body.dark .portal-menu-item:hover, body.dark .portal-menu-item.active {
   gap: 20px;
 }
 
+
+/* --- Interactive Dental Technology Tour --- */
+.tech-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+}
+
+.tech-card {
+  padding: 30px;
+  border-radius: var(--radius-md);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow-sm);
+  transition: all var(--transition-normal);
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.tech-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-lg);
+  border-color: var(--primary-light);
+}
+
+.tech-icon {
+  width: 54px;
+  height: 54px;
+  border-radius: var(--radius-sm);
+  background: rgba(13, 101, 117, 0.05);
+  color: var(--primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  transition: all var(--transition-normal);
+}
+
+.tech-card:hover .tech-icon {
+  background: var(--primary);
+  color: white;
+}
+
+.tech-card h3 {
+  font-size: 1.25rem;
+  margin-bottom: 10px;
+}
+
+.tech-card p {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  margin-bottom: 16px;
+  flex-grow: 1;
+}
+
+.btn-tech-explore {
+  font-weight: 600;
+  font-size: 0.85rem;
+  color: var(--secondary);
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: transform var(--transition-fast);
+}
+
+.tech-card:hover .btn-tech-explore {
+  transform: translateX(4px);
+}
+
+/* Modal Overlay Styling */
+.tech-modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(10, 15, 20, 0.7);
+  backdrop-filter: blur(8px);
+  z-index: 2000;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  animation: fadeIn 0.3s ease forwards;
+}
+
+.tech-modal.active {
+  display: flex;
+}
+
+.tech-modal-content {
+  width: 100%;
+  max-width: 850px;
+  padding: 48px;
+  border-radius: var(--radius-lg);
+  position: relative;
+  box-shadow: var(--shadow-lg);
+  animation: slideUp 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.tech-modal-close {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  font-size: 1.5rem;
+  color: var(--text-muted);
+  transition: color var(--transition-fast);
+}
+
+.tech-modal-close:hover {
+  color: var(--primary);
+}
+
+.tech-modal-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 40px;
+}
+
+.tech-modal-icon-badge {
+  width: 60px;
+  height: 60px;
+  border-radius: var(--radius-sm);
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.75rem;
+  margin-bottom: 24px;
+}
+
+.tech-modal-left h3 {
+  font-size: 1.75rem;
+  margin-bottom: 12px;
+}
+
+.tech-modal-left p {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+}
+
+.tech-spec-list {
+  margin-top: 12px;
+}
+
+.tech-spec-list li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.9rem;
+  margin-bottom: 8px;
+  color: var(--text-muted);
+}
+
+.tech-spec-list li i {
+  color: var(--secondary);
+}
+
+.tech-comparison-box {
+  background: var(--background);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.tech-comp-item p {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+.tech-comp-label {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 4px 10px;
+  border-radius: var(--radius-full);
+  margin-bottom: 8px;
+}
+
+.tech-comp-label.old {
+  background: var(--border);
+  color: var(--text-muted);
+}
+
+.tech-comp-label.new {
+  background: linear-gradient(135deg, var(--secondary), var(--primary-light));
+  color: white;
+}
+
 /* --- Responsive Breakpoints --- */
 @media (max-width: 1024px) {
   .hero-grid {
@@ -1651,6 +1846,15 @@ body.dark .portal-menu-item:hover, body.dark .portal-menu-item.active {
   }
   .footer-grid {
     grid-template-columns: 1fr 1fr;
+  }
+  .tech-modal-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+  .tech-modal-content {
+    padding: 30px 24px;
+    max-height: 92vh;
+    overflow-y: auto;
   }
 }
 
