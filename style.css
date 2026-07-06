@@ -1615,6 +1615,10 @@ body.dark .portal-menu-item:hover, body.dark .portal-menu-item.active {
   border-color: var(--primary-light);
 }
 
+.tech-card:hover .service-img-wrapper img {
+  transform: scale(1.06);
+}
+
 .tech-icon {
   width: 54px;
   height: 54px;
